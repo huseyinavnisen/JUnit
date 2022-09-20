@@ -6,15 +6,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
 
-public class C04_IFrame {
+public class C04_YouTube_Deneme {
 
     WebDriver driver;
     Select select;
@@ -30,16 +27,20 @@ public class C04_IFrame {
 
     @After
     public void tearDown() {
-        // driver.close();
+       driver.close();
     }
 
     @Test
-    public void test1() {
-        // iframe mantığı ile viedo linki değişebileceği için List içine alarak;
-        driver.get("https://html.com/tags/iframe/");
-        List<WebElement> iframeList = new ArrayList<>(driver.findElements(By.xpath("//iframe")));
-        driver.switchTo().frame(iframeList.get(0));
-        driver.findElement(By.xpath("//*[@aria-label='Oynat']")).click();
+    public void test1() throws InterruptedException {
+        driver.get("https://www.youtube.com/watch?v=2y02QxtTebg");
+        driver.findElement(By.xpath("//*[@class='ytp-large-play-button ytp-button']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//*[@class='ytp-fullscreen-button ytp-button']")).click();
+        Thread.sleep(4000);
+        driver.get("https://www.youtube.com/watch?v=OnbSs7c6hEU");
+        driver.findElement(By.xpath("//*[@class='ytp-large-play-button ytp-button']")).click();
+        Thread.sleep(5000);
+
     }
 
 }

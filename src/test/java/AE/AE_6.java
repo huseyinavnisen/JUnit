@@ -30,7 +30,7 @@ public class AE_6 {
     }
 
     @Test
-    public void test1() {
+    public void test1() throws InterruptedException {
 
         //3. Ana sayfanın başarıyla görünür olduğunu doğrulayın
         Assert.assertTrue(driver.findElement(By.xpath("//*[@style='color: orange;']")).isDisplayed());
@@ -61,13 +61,7 @@ public class AE_6 {
 
         // 11. 'Ana Sayfa' düğmesini tıklayın ve ana sayfaya başarıyla indiğini doğrulayın
         driver.findElement(By.xpath("(//*[@href='/'])[2]")).click(); // ANA SAYFAYA DÖN tıkla
-        Assert.assertTrue(driver.findElement(By.xpath("(//title)[1]")).isDisplayed());
-
-
-
-
+        Thread.sleep(3000);
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@style='color: orange;']")).isDisplayed());
     }
-
-
-
 }

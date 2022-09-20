@@ -74,7 +74,7 @@ public class AE_2_Tekrar {
 
         //10. 'HESAP SİLİNDİ!' görünür
         //10. Verify that 'ACCOUNT DELETED!' is visible
-        WebElement webDeleteAccountYazisi=driver.findElement(By.xpath(" //*[text()='Delete Account']"));
+        WebElement webDeleteAccountYazisi=driver.findElement(By.xpath("//h1"));
         Assert.assertTrue(webDeleteAccountYazisi.isDisplayed());
     }
 
