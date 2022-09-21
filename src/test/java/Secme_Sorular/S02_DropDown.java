@@ -1,4 +1,4 @@
-package AE;
+package Secme_Sorular;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;
@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public class S06_DropDown_Tekrar {
+public class S02_DropDown {
 
 
         // 1. http://zero.webappsecurity.com/ Adresine gidin

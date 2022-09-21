@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
@@ -37,9 +38,14 @@ Thread.sleep(5000);
         driver.get("http://demo.guru99.com/test/guru99home/");
 
 
-       // 2)sayfadaki iframe sayısınıbulunuz.
-       // 3)ilk iframe’deki (Youtube) play butonunatıklayınız.
-       // 4)ilk iframe’den çıkıp ana sayfayadönünüz
+       // 2)sayfadaki iframe sayısını bulunuz.
+        List<WebElement> iframeList = new ArrayList<>(driver.findElements(By.xpath("//iframe")));
+        for (int i = 0; i <iframeList.size() ; i++) {
+            System.out.println(i+":"+iframeList.get(i).getText());
+
+        }
+       // 3)ilk iframe’deki (Youtube) play butonuna tıklayınız.
+       // 4)ilk iframe’den çıkıp ana sayfaya dönünüz
        // 5)ikinci iframe’deki (Jmeter Made Easy) linke(https://www.guru99.com/live-selenium-project.html) tıklayınız
     }
 }
