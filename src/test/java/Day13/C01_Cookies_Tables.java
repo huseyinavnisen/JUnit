@@ -7,7 +7,7 @@ import org.openqa.selenium.Cookie;
 
 import java.util.Set;
 
-public class C01_Cookies extends TestBaseBeforeAfter {
+public class C01_Cookies_Tables extends TestBaseBeforeAfter {
     @Test
     public void test1() {
         // 1-Amazon anasayfaya gidin
