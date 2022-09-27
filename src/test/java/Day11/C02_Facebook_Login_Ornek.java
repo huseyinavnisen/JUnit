@@ -1,6 +1,6 @@
 package Day11;
 
-import Utilities.TestBaseBeforeAfter;
+import utilities.TestBaseBeforeAfter;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

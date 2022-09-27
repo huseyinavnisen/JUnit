@@ -1,6 +1,6 @@
 package Secme_Sorular;
 
-import Utilities.TestBaseBeforeAfter;
+import utilities.TestBaseBeforeAfter;
 import com.github.javafaker.Faker;
 import org.junit.Assert;
 import org.junit.Test;

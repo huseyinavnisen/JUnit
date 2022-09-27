@@ -1,6 +1,6 @@
 package Day13;
 
-import Utilities.TestBaseBeforeAfter;
+import utilities.TestBaseBeforeAfter;
 
 public class C06_Odev3 extends TestBaseBeforeAfter {
    // “https://demoqa.com/webtables” sayfasina gidin

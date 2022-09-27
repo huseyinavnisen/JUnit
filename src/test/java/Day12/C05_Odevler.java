@@ -1,6 +1,6 @@
 package Day12;
 
-import Utilities.TestBaseBeforeAfter;
+import utilities.TestBaseBeforeAfter;
 import org.junit.Test;
 
 public class C05_Odevler extends TestBaseBeforeAfter {

@@ -26,7 +26,6 @@ public class LMS_Giris {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        //http://zero.webappsecurity.com/ Adresine gidin
         driver.get("https://lms.techproeducation.com/");
 
     }

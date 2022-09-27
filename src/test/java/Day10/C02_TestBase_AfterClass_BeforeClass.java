@@ -1,6 +1,6 @@
 package Day10;
 
-import Utilities.TestBaseBeforeClassAfterClass;
+import utilities.TestBaseBeforeClassAfterClass;
 import org.junit.Test;
 
 public class C02_TestBase_AfterClass_BeforeClass extends TestBaseBeforeClassAfterClass {

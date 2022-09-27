@@ -13,9 +13,9 @@ public class C03_ReadExcel {
     @Test
     public void readExcel() throws IOException {
 
-    // Belirtilen SatırNo ve sutunNo değerlerini baz alıp o hücredeki değeri yazdırın
+    // Belirtilen Sat?rNo ve sutunNo de?erlerini baz al?p o hücredeki de?eri yazd?r?n
 
-        int satır=12;
+        int satir=12;
         int sutun=2;
 
         String dosyaYolu = "src/resources/ulkeler.xlsx";
@@ -23,12 +23,12 @@ public class C03_ReadExcel {
         Workbook workbook = WorkbookFactory.create(fis);
         String actualData = workbook.
                 getSheet("Sayfa1")
-                .getRow(satır-1)
+                .getRow(satir-1)
                 .getCell(sutun-1)
                 .toString();
         System.out.println(actualData);
 
-        // sonucun konsolda yazanla aynı olduğunu doğrulayın
+        // sonucun konsolda yazanla ayn? oldu?unu do?rulay?n
         String expectedData="Baku";
         Assert.assertEquals(actualData,expectedData);
 

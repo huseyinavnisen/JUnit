@@ -1,4 +1,4 @@
-package Day06;
+package Day06_Radio_Assertion;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;
 import org.junit.Assert;

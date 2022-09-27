@@ -1,4 +1,4 @@
-package Day05;
+package Day05_Junit_Before_After;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Test;

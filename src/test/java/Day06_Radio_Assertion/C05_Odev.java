@@ -1,4 +1,4 @@
-package Day06;
+package Day06_Radio_Assertion;
 
 public class C05_Odev {
   // Bir Class olusturalim YanlisEmailTesti

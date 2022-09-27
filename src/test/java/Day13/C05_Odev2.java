@@ -1,6 +1,6 @@
 package Day13;
 
-import Utilities.TestBaseBeforeAfter;
+import utilities.TestBaseBeforeAfter;
 
 public class C05_Odev2 extends TestBaseBeforeAfter {
   // Bir metod oluşturun : printData(int row, int column);

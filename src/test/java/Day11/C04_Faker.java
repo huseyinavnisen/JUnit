@@ -1,6 +1,6 @@
 package Day11;
 
-import Utilities.TestBaseBeforeAfter;
+import utilities.TestBaseBeforeAfter;
 import com.github.javafaker.Faker;
 import org.junit.Test;
 import org.openqa.selenium.By;
